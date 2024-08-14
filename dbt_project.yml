@@ -35,3 +35,8 @@ dbt-cloud:
 models:
   tonayya_does_bigquery:
       materialized: view
+
+    
+    +persist_docs:
+      relation: true
+      columns: true
