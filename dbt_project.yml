@@ -37,3 +37,6 @@ models:
     +persist_docs:
       relation: true
       columns: true
+
+  dbt_project_evaluator:
+    +severity: "{{ env_var('DBT_PROJECT_EVALUATOR_SEVERITY', 'error') }}"
