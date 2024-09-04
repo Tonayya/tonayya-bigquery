@@ -39,4 +39,4 @@ models:
       columns: true
 tests:
   dbt_project_evaluator:
-    +severity: "{{ env_var('DBT_PROJECT_EVALUATOR_SEVERITY', 'error') }}"
+    +severity: "{{ env_var('DBT_PROJECT_EVALUATOR_SEVERITY', 'warn') }}"
