@@ -32,11 +32,4 @@ dbt-cloud:
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
-models:
-  tonayya_does_bigquery:
-    +persist_docs:
-      relation: true
-      columns: true
-tests:
-  dbt_project_evaluator:
-    +severity: "{{ env_var('DBT_PROJECT_EVALUATOR_SEVERITY', 'warn') }}"
+
